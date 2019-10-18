@@ -15,8 +15,16 @@ def portfolio(request):
     response = render(request, 'gallery.html', context)
     return HttpResponse(response)
 
+def about_me(request):
+    content = {
+        'skills': ['ruby on rails', 'python', 'sql', 'javascript'],
+        'interests': ['web development', 'software development', 'ux design']
+    }
+    response = render(request,'about_me.html', content)
+    return HttpResponse(response)
 
 urlpatterns = [
     path('home/', home_page),
     path('portfolio/', portfolio),
+    path('about_me/', about_me),
 ]
