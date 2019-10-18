@@ -1,0 +1,6 @@
+<h1>Favourite Links:</h1>
+
+<h2>Check out my favourite site:</h2>
+{% for fave_link in fav_links %}
+    <p><a href='{{ fave_link }}' alt='One of my favourite links.'>A great link you should check out!</a></p>
+{% endfor %}

@@ -1,8 +1,16 @@
-<h1> About me</h1>
-<header>
-    A little bit about John Smith 
-</header>
+<h1>Welcome to the gallery</h1>
+<p>This is the gallery page!</p>
 
-<h2>Skills</h2>
+<h2>Skills:</h2>
+<ul>
+    {% for skill in skills %}
+        <li>{{skill}}</li>
+    {% endfor %}
+</ul>
 
-<h2>Interests</h2> 
+<h2>Interests:</h2>
+<ul>
+    {% for interest in interests %}
+        <li>{{interest}}</li>
+    {% endfor %}
+</ul>
